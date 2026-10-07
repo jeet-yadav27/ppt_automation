@@ -38,7 +38,21 @@ python install_offline.py
 
 That runs `pip install --no-index --find-links=packages -r requirements.txt`. Pip will not contact the network.
 
-## Run the report
+## Web app
+
+Several people can open the site and download their own PowerPoint at the same time. The layout is in `ARCHITECTURE.md`.
+
+```text
+cd frontend
+npm install
+npm run build
+cd ..
+python run_web.py
+```
+
+Then open `http://127.0.0.1:8000`. `fastapi` and `uvicorn` are in `requirements.txt`. After you change those lines, run `python download_packages.py` again so the offline `packages/` folder includes them.
+
+## Run the notebook
 
 Open `ftir_kpi_report.ipynb` and run all cells.
 

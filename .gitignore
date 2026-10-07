@@ -39,3 +39,7 @@ Thumbs.db
 # --- Temporary files ---
 *.tmp
 *.bak
+
+# --- Web app ---
+node_modules/
+frontend/dist/
