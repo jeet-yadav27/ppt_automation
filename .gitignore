@@ -1,0 +1,41 @@
+# --- Environment variables ---
+.env
+*.env
+
+# --- Python virtual environments ---
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Jupyter notebooks checkpoints ---
+.ipynb_checkpoints/
+
+# --- Logs ---
+*.log
+
+# --- Streamlit / Gradio cache ---
+.streamlit/
+.gradio/
+
+# --- SQLite database and vector store ---
+data/*.db
+data/chroma/
+
+# --- Generated reports (PPT, PDF, etc.) ---
+*.pptx
+*.pdf
+
+# --- IDE / Editor settings ---
+.vscode/
+.idea/
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Temporary files ---
+*.tmp
+*.bak
